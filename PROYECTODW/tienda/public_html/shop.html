@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tienda</title>
+<link rel='stylesheet' href='css/woocommerce-layout.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)'/>
+<link rel='stylesheet' href='css/woocommerce.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='style.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400,500,700%7CRoboto:400,500,700%7CHerr+Von+Muellerhoff:400,500,700%7CQuattrocento+Sans:400,500,700' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/easy-responsive-shortcodes.css' type='text/css' media='all'/>
+</head>
+<body class="archive post-type-archive post-type-archive-product woocommerce woocommerce-page">
+        <link rel="stylesheet" href="estilos.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+<script language="javascript">
+
+function Subir()
+{
+	var formulario="";
+	var usuario=document.form1.usuario.value;
+	var nombre=document.form1.nombre.value;
+	var apellido=document.form1.apellido.value;
+	var email=document.form1.email.value;
+	var clave1=document.form1.clave1.value;
+	var clave2=document.form1.clave2.value;
+	var hobbies="";
+	var b=document.form1.hobby.length;
+	for(a=0;a<b;a++)
+	{
+	if (document.form1.hobby[a].checked)
+		hobbies+=document.form1.hobby[a].value + ", ";
+	}
+	var pais=document.form1.pais.value;
+	var sexo=document.form1.sexo.value;
+	if (usuario=="" || nombre=="" || apellido=="" || pais=="" )
+	{
+		alert("Los campos con asterisco son obligatorios!!!");
+		return false;
+	}
+	if (hobbies.length==0)
+	{
+		alert("Debes seleccionar al menos un hobby!!");
+		return false;
+	}
+	if ((clave1!=clave2) || (clave1==""))
+	{
+		alert("Las claves deben ser iguales y no pueden ser en blanco!!!");
+		return false;
+	}
+	if (email=="") email="No informado";
+	if (sexo=="") sexo="No informado";
+	formulario="Usuario: " + usuario + "\nNombre: " + nombre + "\nApellido: " + apellido + "\n"
+		 + "E-mail: " + email + "\nClave: " + clave1  + "\nHobbies: " + hobbies + "\nPais: "
+		+ pais + "\nSexo: " + sexo;
+	alert(formulario);	
+}
+
+//-->
+</script>
+
+        
+        <style>
+            .headerNegro{
+                background-color: black;
+            }
+
+            .alinearCentradoY{
+                display: flex;
+                align-items: center;
+            }
+
+            * {
+                font-family: inherit;
+            }
+
+            .enlaces{
+                text-decoration: none;
+                color: white;
+            }
+
+            .enlaces:hover{
+                color:#f05023
+            }
+			
+			.contactanos{
+				display:inline-block;
+				padding:90px;
+				
+			}
+			
+			form{
+				background:white;
+				padding:10px;
+				width:300px;
+				margin:0 auto;
+				border-radius:3px;
+				font-size:16px;
+				color:black;
+			}
+			
+			input,textarea{
+				outline:none;
+				border:0;
+			}
+			
+			.field{
+				border:solid 1px #999; 
+				padding:10px;
+				width:250px;
+			}
+			
+			.field:focus{
+				border-color:#E98214;
+			}
+			
+
+        </style>
+
+        <script>
+
+        </script>
+
+
+        <title>Tienda</title>
+		
+		<script type="text/javascript" src="validaciones.js"></script>
+	</head>
+	
+    <body>
+        <div class="headerNegro">
+			<div class="row" style="padding-left: 5%; padding-right: 5%;" >
+                <div class="elemento col-md-3 alinearCentradoY">
+                    <img src="logoTienda.png" alt="imagenDeTienda" height="55%">
+                </div>
+
+                <div class="elemento col-md-6 alinearCentradoY">
+                    <input type="search" name="txtBusqueda" id="txtBusqueda" placeholder="¿Qué equipo es de tu interés?" style="height: 35%; font-size:larger; border-color: orange;"  size="30">
+                    <select name="select" style="font-size:larger; height: 35%;">
+                        <option value="value1">Elige una categoría</option>
+                        <option value="value2">Apple</option>
+                        <option value="value3">Huawei</option>
+                        <option value="value4">Laptops</option>
+                        <option value="value5">Lenovo</option>
+                        <option value="value6">Realme</option>
+                        <option value="value7">Samsung</option>
+                        <option value="value8">Tablets</option>
+                        <option value="value9">Xiaomi</option>
+                    </select>
+                    <input type="submit" value="          " style="font-size:larger; height: 35%; background-color:#FF4B06; background-image: url(iconos/lupaBlanca.png); background-repeat: no-repeat; background-position: center;">
+                </div>
+
+                <div class="elemento col-md-3 alinearCentradoY">
+                    <a href="../../login/login.html" class="enlaces" style="padding: 4%; font-weight: bold;">Ingresar/Registrar</a>
+                    <a href="https://www.celularquito.com/wishlist/" style="display: flex; justify-content: center;"> <img src="iconos/corazon.png" alt="corazón" width="40%" height="15%"></a>
+                    <a href="https://www.celularquito.com/carrito/" class="enlaces" style="display: flex;"> <img src="iconos/cartera.png" alt="cartera" width="40%" height="15%">$0.00</a>
+                    
+                </div>
+            </div>
+
+            <div style="height: 1px; background-color: white; padding:0.1%"></div>
+
+            <div style="padding: 1%;">
+                
+                    <div class="dropdown-container" style="background-color:#FF4B06; font-weight: bold; color: white;">Selecciona una categoría
+                    <ul>
+                        <li><a class="enlacesNav">Apple</a></li>
+                        <li><a class="enlacesNav">Cases y protección</a></li>
+                        <li><a class="enlacesNav">Huawei</a></li>
+                        <li><a class="enlacesNav">Laptops</a></li>
+                        <li><a class="enlacesNav">Lenovo</a></li>
+                        <li><a class="enlacesNav">Realme</a></li>
+                        <li><a class="enlacesNav">Samsung</a></li>
+                        <li><a class="enlacesNav">Tablets</a></li>
+                        <li><a class="enlacesNav">Xiaomi</a></li>
+                    </ul>
+                    </div>
+
+                    <div style="display: inline-block; width: 13%;">
+                        
+                    </div>
+
+                    <div style="display:inline;">
+                        <a class="nave" href="../../pagina principal/PaginaPrincipal.html" style="color:#FF4B06">Inicio</a>
+                        <a class="nave" href="../../empresa/SeccionEmpresa.html" >Empresa</a>
+                        <a class="nave" href="shop.html">Tienda</a>
+                        <a class="nave" href="../../blog/public_html/blog.html">Blog</a>
+                        <a class="nave" href="../../Contactanos/Contactanos.html">Contáctanos</a>
+                        <a class="nave" href="../../PreciosEnEfectivo/PreciosEnEfectivo.html">Precio en efectivo</a>
+                    </div>
+                
+            </div>
+		</div>
+
+        <div id="fondoBlanco">
+            <a href="https://web.whatsapp.com/send?phone=593997288410&text=Hola%20Sergio,%20tu%20eres%20un%20gran%20amigo"><img src="iconos/whatsapp.png" alt="whatsapp" id="whatsapp"></a>
+            <a href="https://www.messenger.com/t/100002354674154/"><img src="iconos/messenger.png" alt="messenger" id="messenger"></a>
+            
+        </div>
+		</head>
+		<!-- #masthead -->
+		<div id="content" class="site-content">
+			<div id="primary" class="content-area column full">
+				<main id="main" class="site-main" role="main" style="margin-left: 1%;">
+				<p class="woocommerce-result-count">
+					 Showing 1–8 of 12 results
+				</p>
+				<ul class="products">
+				
+					<li class="first product">
+					<a href="https://www.celularquito.com/product/iphone-12-pro/">
+					<span class="onsale">Sale!</span>
+					<img style="width: 300px; height: 300px;" src="https://www.celularquito.com/wp-content/uploads/2021/07/BACK-12-PRO-MAX-300x163.jpg" alt="iphone">
+					<h3>APPLE IPHONE 12 PRO</h3>
+					<span class="price"><span class="amount">$1,455.00</span></span>
+					</a><a href="#" class="button">Agregar al carrito</a>
+					</li>
+
+					<li class="product">
+					<a href="https://www.celularquito.com/product/huawei-tablet-t3-10-con-chip/">
+					<img style="width: 300px; height: 300px;" src="https://www.celularquito.com/wp-content/uploads/2020/07/HUAWEI-MediaPad-T3-10_4-300x300.jpg" alt="huawei mediapad">
+					<h3>HUAWEI TABLET T3 10</h3>
+					<span class="price"><span class="amount">$219.00</span></span>
+					</a><a href="#" class="button">Agregar al carrito</a>
+					</li>
+					
+					<li class="product">
+					<a href="https://www.celularquito.com/product/laptop-lenovo-core-i3-8130u/">
+					<img style="width: 300px; height: 300px;" src="https://www.celularquito.com/wp-content/uploads/2020/07/lenovo-v130-15IKB_4-300x300.jpg" alt="lenovo core i3">
+					<h3>LAPTOP LENOVO CORE I3 – 8130U</h3>
+					<span class="price"><span class="amount">$600.00</span></span>
+					</a><a href="#" class="button">Agregar al carrito</a>
+					</li>
+					
+					<li class="last product">
+					<a href="https://www.celularquito.com/product/laptop-lenovo-core-i5-81y3006qfe/">
+					<img style="width: 300px; height: 300px;" src="https://www.celularquito.com/wp-content/uploads/2020/07/lenovo-ideapad-l3-15iml05_11-300x300.jpg" alt="lenovo core i7">
+					<h3>LAPTOP LENOVO CORE I7 DÉCIMA GENERACIÓN</h3>
+					<span class="price"><span class="amount">$959.00</span></span>
+					</a><a href="#" class="button">Agregar al carrito</a>
+					</li>
+					
+					<li class="first product">
+					<a href="https://www.celularquito.com/product/samsung-s21-ultra-5g/">
+					<img style="width: 300px; height: 300px;" src="https://www.celularquito.com/wp-content/uploads/2020/07/Samsung-Galaxy-S20-Ultra_camera3-300x300.jpg" alt="samsung s20">
+					<h3>SAMSUNG S21 ULTRA 5G</h3>
+					<span class="price"><span class="amount">$1379.00</span></span>
+					</a><a href="#" class="button">Agregar al carrito</a>
+					</li>
+					
+					<li class="product">
+					<a href="https://www.celularquito.com/product/tablets6-lite-wifi-lapiz/">
+					<img style="width: 300px; height: 300px;" src="https://www.celularquito.com/wp-content/uploads/2021/07/TABLET-S6-LITE-2-300x300.jpg" alt="samsung tablet s6">
+					<h3>TABLET S6 LITE WIFI & LÁPIZ</h3>
+					<span class="price"><span class="amount">$439.00</span></span>
+					</a><a href="#" class="button">Agregar al carrito</a>
+					</li>
+					
+					<li class="product">
+					<a href="https://www.celularquito.com/product/mi-10t-pro-5g/">
+					<img style="width: 300px; height: 300px;" src="https://www.celularquito.com/wp-content/uploads/2021/06/MI-10T-PRO-2-300x300.jpg" alt="mi 10t">
+					<h3>MI 10T PRO 5G</h3>
+					<span class="price"><span class="amount">$679.00</span></span>
+					</a><a href="#" class="button">Agregar al carrito</a>
+					</li>
+					
+					<li class="last product">
+					<a href="https://www.celularquito.com/product/note-10-pro-8gb-ram/">
+					<img style="width: 300px; height: 300px;" src="https://www.celularquito.com/wp-content/uploads/2021/07/NOTE-10-PRO-COLORES.jpg" alt="note 10 pro">
+					<h3>NOTE 10 PRO 8GB RAM</h3>
+					<span class="price"><span class="amount">$49.00</span></span>
+					</a><a href="#" class="button">Agregar al carrito</a>
+					</li>
+					
+				</ul>
+				<nav class="woocommerce-pagination">
+				<ul class="page-numbers">
+					<li><span class="page-numbers current">1</span></li>
+					<li><a class="page-numbers" href="#">2</a></li>
+					<li><a class="next page-numbers" href="#">→</a></li>
+				</ul>
+				</nav>
+				</main>
+				<!-- #main -->
+			</div>
+			<!-- #primary -->
+		</div>
+		<!-- #content -->
+	</div>
+	<!-- .container -->
+<footer class="footer-container" style="display:block;">
+ <div class="row">
+  <div class="elemento col-md-1">
+  </div>
+  <div class="elemento col-md-4">
+  <div class="footer-logo" style="max-width: 80%; margin-bottom: 10px;">
+    <img class="logo" src="iconos/logo_store.png" alt="logo" style="margin-bottom: 10px;"/>
+<p style="text-align: justify; color:#777;">
+"Somos una empresa dedicada a la comercializaci&oacute;n y distribuci&oacute;n de
+equipos tecnol&oacute;gicos celulares, tablets, laptops, accesorios ofreciendo 
+una soluci&oacute;n a la demanda local y nacional.&nbsp;" </p>
+<div style="line-height: 2; text-align: justify; color:#777;">
+<i class="fa">
+</i>
+Direcci&oacute;n: Amazonas N36 y Naciones
+Unidas Centro Comercial Caracol local 98
+<br>
+<i class="fa">
+</i>
+Tel&eacute;fono: +593 987 392 520
+<br>
+<i class="fa">
+</i>
+Email: ventas@celularstore.com
+</div>
+</div>
+</div>
+<div id="elemento2" class="elemento col-md-3">
+<h5 class="widget-title"> BLOGS RECIENTES </h5>
+<p id="parf"> 
+Nueva Secci&oacute;n 2021 </p>
+<p id="parrf"> abril 10, 2021</p> <p style="color:#777; font-size: 12px;"> No comments </p>   
+</div>
+<div class="elemento col-md-4">
+<h5 class="widget-title"> ENLACES &Uacute;TILES </h5> <br>
+<a class="enlacesF" href=" "> Pol&iacute;ticas de Privacidad </a> <br> <br>
+<a class="enlacesF"  href=" "> T&eacute;rminos y Condiciones </a> <br> <br>
+<a class="enlacesF"  href=" "> Cont&aacute;ctanos </a> <br> <br>
+<a class="enlacesF"  href=" "> Preguntas Frecuentes </a> <br> <br>
+<a class="enlacesF"  href=" "> Pagos en efectivo </a>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="elemento col-md-1">
+</div>
+<div class="elemento col-md-4">
+<p style="color: #777; font-weight: lighter;"> © Celular Store 2021. Todos los Derechos Reservados </p> 
+</div>
+</div>
+</footer>
+		
+
+<!-- #page -->
+<script src='js/jquery.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/scripts.js'></script>
+<script src='js/masonry.pkgd.min.js'></script>
+</body>
+</html>

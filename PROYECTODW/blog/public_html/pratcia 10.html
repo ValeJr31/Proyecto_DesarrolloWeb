@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Untitled Document</title>
+        <script type="text/javascript">
+            var zoomMas = 0;
+            var zoomMenos = 0;
+            var normal = 150;
+            function cambiarlink(accion) {
+                // 1. obtener elemento a manipular
+                var imagen = document.getElementById("imagen1");
+
+                zoomMas = imagen.width;
+                zoomMenos = imagen.width;
+                switch (accion) {
+                    case 'mas':
+                        zoomMas += 50;
+                        imagen.style.width = zoomMas + "px";
+                        imagen.style.heigth = zoomMas + "px";
+                        break;
+                    case 'menos':
+                        zoomMenos -= 50;
+                        imagen.style.width = zoomMenos + "px";
+                        imagen.style.heigth = zoomMenos + "px";
+                        break;
+                    case 'restaurar':
+                        imagen.style.width = normal + "px";
+                        imagen.style.heigth = normal + "px";
+                        break;
+                }
+            }
+            
+            function cambiar(div){
+                div.removeChild(div.lastChild);
+                var parrafo = document.createElement("p");
+                parrafo.innerHTML="nuevo parrafo creado desde js";
+                div.appendChild(parrafo);
+                
+            }
+        </script>
+    </head>
+    <body>
+        <p id="nodop">
+            <a href="#" onclick="cambiarlink('mas');" id="link1">zoom +</a>
+            <a href="#" onclick="cambiarlink('menos');" id="link2">zoom -</a>
+            <a href="#" onclick="cambiarlink('restaurar');" id="link3">restaurar</a>
+        </p>
+        <img id="imagen1" src="img/on.jpg" style="width:150px;heigth:150px" alt="encendido"/>
+
+        <div id="contenedor" onclick="cambiar(this)" style="border: 2px solid green;width: 200px">
+            Da click en el div
+             <img  src="img/on.jpg" style="width:100px;heigth:150px" alt="encendido"/>
+             <p>Un parrafo</p>
+            
+        </div>
+        
+        
+    </body>
+</html>

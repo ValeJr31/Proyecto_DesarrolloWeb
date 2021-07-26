@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="stylesheet" href="estilosSergio.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />  
+        <style>
+            .headerNegro{
+                background-color: black;
+            }
+
+            .alinearCentradoY{
+                display: flex;
+                align-items: center;
+            }
+
+            * {
+                font-family: inherit;
+            }
+
+            .enlaces{
+                text-decoration: none;
+                color: white;
+            }
+
+            .enlaces:hover{
+                color:#f05023
+            }
+			
+			.contactanos{
+				display:inline-block;
+				padding:90px;
+				
+			}
+
+        </style>
+
+        <script>
+
+        </script>
+
+        <title>PreciosEnEfectivo</title>
+		
+	</head>
+	
+    <body>
+        <div class="headerNegro">
+			<div class="row" style="padding-left: 5%; padding-right: 5%;" >
+                <div class="elemento col-md-3 alinearCentradoY">
+                    <img src="logoTienda.png" alt="imagenDeTienda" height="100px;">
+                </div>
+
+                <div class="elemento col-md-6 alinearCentradoY">
+                    <input type="search" name="txtBusqueda" id="txtBusqueda" placeholder="¿Qué equipo es de tu interés?" style="height: 35%; font-size:larger; border-color: orange;"  size="30">
+                    <select name="select" style="font-size:larger; height: 35%;">
+                        <option value="value1">Elige una categoría</option>
+                        <option value="value2">Apple</option>
+                        <option value="value3">Huawei</option>
+                        <option value="value4">Laptops</option>
+                        <option value="value5">Lenovo</option>
+                        <option value="value6">Realme</option>
+                        <option value="value7">Samsung</option>
+                        <option value="value8">Tablets</option>
+                        <option value="value9">Xiaomi</option>
+                    </select>
+                    <input type="submit" value="          " style="font-size:larger; height: 35%; background-color:#FF4B06; background-image: url(iconos/lupaBlanca.png); background-repeat: no-repeat; background-position: center;">
+                </div>
+
+                <div class="elemento col-md-3 alinearCentradoY">
+                    <a href="../login/login.html" class="enlaces" style="padding: 4%; font-weight: bold;">Ingresar/Registrar</a>
+                    <a href="https://www.celularquito.com/wishlist/" style="display: flex; justify-content: center;"> <img src="iconos/corazon.png" alt="corazón" width="40%" height="15%"></a>
+                    <a href="https://www.celularquito.com/carrito/" class="enlaces" style="display: flex;"> <img src="iconos/cartera.png" alt="cartera" width="40%" height="15%">$0.00</a>
+                    
+                </div>
+            </div>
+
+            <div style="height: 1px; background-color: white; padding:0.1%"></div>
+
+            <div style="padding: 1%;">
+                
+                    <div class="dropdown-container" style="background-color:#FF4B06; font-weight: bold; color: white;">Selecciona una categoría
+                    <ul>
+                        <li><a class="enlacesNav">Apple</a></li>
+                        <li><a class="enlacesNav">Cases y protección</a></li>
+                        <li><a class="enlacesNav">Huawei</a></li>
+                        <li><a class="enlacesNav">Laptops</a></li>
+                        <li><a class="enlacesNav">Lenovo</a></li>
+                        <li><a class="enlacesNav">Realme</a></li>
+                        <li><a class="enlacesNav">Samsung</a></li>
+                        <li><a class="enlacesNav">Tablets</a></li>
+                        <li><a class="enlacesNav">Xiaomi</a></li>
+                    </ul>
+                    </div>
+
+                    <div style="display: inline-block; width: 13%;">
+                        
+                    </div>
+
+                    <div style="display:inline;">
+                        <a class="nave" href="../pagina principal/PaginaPrincipal.html" style="color:#FF4B06">Inicio</a>
+                        <a class="nave" href="../empresa/SeccionEmpresa.html" >Empresa</a>
+                        <a class="nave" href="../tienda/public_html/shop.html">Tienda</a>
+                        <a class="nave" href="../blog/public_html/blog.html">Blog</a>
+                        <a class="nave" href="../Contactanos/Contactanos.html">Contáctanos</a>
+                        <a class="nave" href="PreciosEnEfectivo.html">Precio en efectivo</a>
+                    </div>
+                
+            </div>
+		</div>
+
+        <div id="fondoBlanco">
+            <a href="https://web.whatsapp.com/send?phone=593997288410&text=Hola%20Sergio,%20tu%20eres%20un%20gran%20amigo"><img src="iconos/whatsapp.png" alt="whatsapp" id="whatsapp"></a>
+            <a href="https://www.messenger.com/t/100002354674154/"><img src="iconos/messenger.png" alt="messenger" id="messenger"></a>
+            
+        </div>
+			
+		<div style="padding-bottom:30px;">
+			<img src="fondo.png"> 	
+		</div>
+		
+		<div>
+			<img src="barra.png" width="1350px"><br/>
+		</div>
+		<div class="telefono" style="margin-top:30px">
+			<div class="row">
+				<div class="col-md-6">
+					<h2 id="encabezado">Samsung Galaxy</h2>
+					<div class="row">
+						<div class="row">
+							<div class="col-md-3">
+								<p><b>Modelo</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Capacidaa</b></p>
+							</div>
+							<div class="col-md-3">
+								<p><b>Colores</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Valores en efectivo</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Valor 12 cuotas de</b></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Galaxy S21 ULTRA 5G</p>
+							</div>
+							<div class="col-md-2">
+								<p>256GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>Silver y black</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 1249</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 136</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Galaxy S20 FE NEW MODEL</p>
+							</div>
+							<div class="col-md-2">
+								<p>256GB 8GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>BLUE , WHITE, GREEN</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 649</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 65</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Galaxy Note 20 ULTRA</p>
+							</div>
+							<div class="col-md-2">
+								<p>256GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>BLACK</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 1089</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 109</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Galaxy A72</p>
+							</div>
+							<div class="col-md-2">
+								<p>128GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>Azul, Blanco, Negro</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 406</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 46</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Galaxy A51</p>
+							</div>
+							<div class="col-md-2">
+								<p>128GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>Turquesa, Negro	</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 289</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 29</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-6">
+					<h2 id="apple">Apple Iphone</h2>
+					<div class="row">
+						<div class="col-md-12">
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p><b>Modelo</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Capacidaa</b></p>
+							</div>
+							<div class="col-md-3">
+								<p><b>Colores</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Valores en efectivo</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Valor 12 cuotas de</b></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Iphone SE 2020</p>
+							</div>
+							<div class="col-md-2">
+								<p>256GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>Silver y black</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 1249</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 136</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Iphone 11</p>
+							</div>
+							<div class="col-md-2">
+								<p>256GB 8GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>BLUE , WHITE, GREEN</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 649</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 65</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Iphone 11 PRO MAX</p>
+							</div>
+							<div class="col-md-2">
+								<p>256GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>BLACK</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 1089</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 109</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Iphone 12</p>
+							</div>
+							<div class="col-md-2">
+								<p>128GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>Azul, Blanco, Negro</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 406</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 46</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>IPHONE 11 PRO 256GB</p>
+							</div>
+							<div class="col-md-2">
+								<p>128GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>Turquesa, Negro	</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 289</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 29</p>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="row" style="margin-top:30px">
+				<div class="col-md-6">
+					<h2 id="encabezado">Realme</h2>
+					<div class="row">
+						<div class="col-md-12">
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p><b>Modelo</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Capacidaa</b></p>
+							</div>
+							<div class="col-md-3">
+								<p><b>Colores</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Valores en efectivo</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Valor 12 cuotas de</b></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Realme XT</p>
+							</div>
+							<div class="col-md-2">
+								<p>256GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>Silver y black</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 1249</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 136</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Realme 6</p>
+							</div>
+							<div class="col-md-2">
+								<p>256GB 8GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>BLUE , WHITE, GREEN</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 649</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 65</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Realme 7</p>
+							</div>
+							<div class="col-md-2">
+								<p>256GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>BLACK</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 1089</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 109</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Realme 6 PRO</p>
+							</div>
+							<div class="col-md-2">
+								<p>128GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>Azul, Blanco, Negro</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 406</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 46</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Realme 7 PRO</p>
+							</div>
+							<div class="col-md-2">
+								<p>128GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>Turquesa, Negro	</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 289</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 29</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-6">
+					<h2 id="apple">Huawei</h2>
+					<div class="row">
+						<div class="col-md-12">
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p><b>Modelo</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Capacidaa</b></p>
+							</div>
+							<div class="col-md-3">
+								<p><b>Colores</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Valores en efectivo</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Valor 12 cuotas de</b></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>P30 LITE</p>
+							</div>
+							<div class="col-md-2">
+								<p>256GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>Silver y black</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 1249</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 136</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Y9A</p>
+							</div>
+							<div class="col-md-2">
+								<p>256GB 8GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>BLUE , WHITE, GREEN</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 649</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 65</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>P40 LITE</p>
+							</div>
+							<div class="col-md-2">
+								<p>256GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>BLACK</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 1089</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 109</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Y5 NEO</p>
+							</div>
+							<div class="col-md-2">
+								<p>128GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>Azul, Blanco, Negro</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 406</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 46</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Y8P</p>
+							</div>
+							<div class="col-md-2">
+								<p>128GB</p>
+							</div>
+							<div class="col-md-3">
+								<p>Turquesa, Negro	</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 289</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 29</p>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="row" style="margin-top:30px">
+				<div class="col-md-6">
+					<h2 id="encabezado">Tablets</h2>
+					<div class="row">
+						<div class="col-md-12">
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p><b>Modelo</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Capacidaa</b></p>
+							</div>
+							<div class="col-md-3">
+								<p><b>Colores</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Valores en efectivo</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Valor 12 cuotas de</b></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Huawei T3 10 Pulgadas</p>
+							</div>
+							<div class="col-md-2">
+								<p>16GB con Chip 2GB ram</p>
+							</div>
+							<div class="col-md-3">
+								<p>Silver y black</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 1249</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 136</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Samsung T295 8 Pulgadas</p>
+							</div>
+							<div class="col-md-2">
+								<p>32gb y 2gb ram</p>
+							</div>
+							<div class="col-md-3">
+								<p>BLUE , WHITE, GREEN</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 649</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 65</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Samsung Tab S7</p>
+							</div>
+							<div class="col-md-2">
+								<p>128gb con 6gb ram</p>
+							</div>
+							<div class="col-md-3">
+								<p>BLACK</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 1089</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 109</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>ALCATEL 7 PULGADAS</p>
+							</div>
+							<div class="col-md-2">
+								<p>16GB 1 GB RAM</p>
+							</div>
+							<div class="col-md-3">
+								<p>Azul, Blanco, Negro</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 406</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 46</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-6">
+					<h2 id="apple">Laptops</h2>
+					<div class="row">
+						<div class="col-md-12">
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p><b>Modelo</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Capacidaa</b></p>
+							</div>
+							<div class="col-md-3">
+								<p><b>Colores</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Valores en efectivo</b></p>
+							</div>
+							<div class="col-md-2">
+								<p><b>Valor 12 cuotas de</b></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Lenovo Core i3 81HN00YAK</p>
+							</div>
+							<div class="col-md-2">
+								<p>1 TB DISCO DURO 15 PULGADAS</p>
+							</div>
+							<div class="col-md-3">
+								<p>Silver y black</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 1249</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 136</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Lenovo Core i7</p>
+							</div>
+							<div class="col-md-2">
+								<p>1TB DISCO DURO 8GB RAM</p>
+							</div>
+							<div class="col-md-3">
+								<p>BLUE , WHITE, GREEN</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 649</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 65</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>HP core i3 decima generacion new model</p>
+							</div>
+							<div class="col-md-2">
+								<p>1 TB DISCO DURO, 4GB RAM 15,6 PULGADAS</p>
+							</div>
+							<div class="col-md-3">
+								<p>BLACK</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 1089</p>
+							</div>
+							<div class="col-md-2">
+								<p>$ 109</p>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+		</div>
+		
+
+
+
+			
+<footer class="footer-container" style="display:block">
+ <div class="row" style="width:1200px;">
+  <div class="elemento col-md-1">
+  </div>
+  <div class="elemento col-md-4">
+  <div class="footer-logo" style="max-width: 80%; margin-bottom: 10px;">
+    <img class="logo" src="iconos/logo_store.png" alt="logo" style="margin-bottom: 10px;"/>
+<p style="text-align: justify; color:#777;">
+"Somos una empresa dedicada a la comercializaci&oacute;n y distribuci&oacute;n de
+equipos tecnol&oacute;gicos celulares, tablets, laptops, accesorios ofreciendo 
+una soluci&oacute;n a la demanda local y nacional.&nbsp;" </p>
+<div style="line-height: 2; text-align: justify; color:#777;">
+<i class="fa">
+</i>
+Direcci&oacute;n: Amazonas N36 y Naciones
+Unidas Centro Comercial Caracol local 98
+<br>
+<i class="fa">
+</i>
+Tel&eacute;fono: +593 987 392 520
+<br>
+<i class="fa">
+</i>
+Email: ventas@celularstore.com
+</div>
+</div>
+</div>
+<div id="elemento2" class="elemento col-md-3">
+<h5 class="widget-title"> BLOGS RECIENTES </h5>
+<p id="parf"> 
+Nueva Secci&oacute;n 2021 </p>
+<p id="parrf"> abril 10, 2021</p> <p style="color:#777; font-size: 12px;"> No comments </p>   
+</div>
+<div class="elemento col-md-4">
+<h5 class="widget-title"> ENLACES &Uacute;TILES </h5> <br>
+<a class="enlacesF" href=" "> Pol&iacute;ticas de Privacidad </a> <br> <br>
+<a class="enlacesF"  href=" "> T&eacute;rminos y Condiciones </a> <br> <br>
+<a class="enlacesF"  href=" "> Cont&aacute;ctanos </a> <br> <br>
+<a class="enlacesF"  href=" "> Preguntas Frecuentes </a> <br> <br>
+<a class="enlacesF"  href=" "> Pagos en efectivo </a>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="elemento col-md-1">
+</div>
+<div class="elemento col-md-4">
+<p style="color: #777; font-weight: lighter;"> © Celular Store 2021. Todos los Derechos Reservados </p> 
+</div>
+</div>
+</footer>
+		
+    </body>
+</html>

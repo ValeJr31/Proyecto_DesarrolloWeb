@@ -1,0 +1,183 @@
+.nave{
+    text-decoration: none;
+    font-size: large;
+    padding: 0.5%;
+    color: white;
+    font-weight: bold;
+}
+
+.nave:hover{
+    color: #FF4B06;
+    font-weight: normal;
+}
+
+.dropdown-container{
+    position: relative;
+    display: inline;
+
+}
+
+.dropdown-container ul{
+    border-style: solid;
+    border-color: #000000;
+    position: absolute;
+    max-height: 0%;
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+}
+
+.dropdown-container li{
+    border:1px;
+    border-style: solid;
+    border-color: #FF4B06;
+    list-style: none;
+    
+}
+
+.enlacesNav{
+    display: block;
+    background-color: antiquewhite;
+    color: black;
+    text-decoration: none;
+}
+
+.enlacesNav:hover{
+    background-color: #dadada;
+    color: #000000;
+}
+
+.dropdown-container:hover ul{
+    max-height:fit-content;
+}
+
+#whatsapp{
+    top: 50%;;
+    margin-right: 1%;
+    float: right;
+    position: fixed;
+    height: 10%;
+    width: 5%;
+    right: 0px;
+}
+
+#messenger{
+    right: 5px;
+    top: 35%;
+    margin-right: 1%;
+    float: right;
+    position: fixed;
+    height: 8%;
+    width: 4%;
+}
+
+.txt{
+    width: 55%;
+    border-style: solid;
+    border-color: rgb(252 175 23 / 75%);
+}
+
+.txt:hover{
+    transition: 0.5s;
+    border-color: #707070;
+}
+
+.txt2{
+    width: 25%;
+    border-style: solid;
+    border-color: rgb(252 175 23 / 75%);
+}
+
+.txt2:hover{
+    transition: 0.5s;
+    border-color: #707070;
+}
+
+.txt3{
+    width: 45%;
+    border-style: solid;
+    border-color: rgb(252 175 23 / 75%);
+}
+
+.txt3:hover{
+    transition: 0.5s;
+    border-color: #707070;
+}
+
+#btnLogin{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width:55%;
+    margin-left: 2%;
+    background-color: #f05023;
+    border: none;
+    color:white;
+    font-weight:500;
+}
+
+#btnLogin:hover{
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+#btnRegistrar{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width:94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: #f05023;
+    border: none;
+    color:white;
+    font-weight:500;
+}
+
+#btnRegistrar:hover{
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+#btnRecuperar{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width:27.5%;
+    margin-left: 1%;
+    background-color: #f05023;
+    border: none;
+    color:white;
+    font-weight:500;
+}
+
+#btnRecuperar:hover{
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+#btnSeguir{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width:27%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left:36.5%;
+    background-color: #f05023;
+    border: none;
+    color:white;
+    font-weight:500;
+}
+
+#btnSeguir:hover{
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+#recuperarContraseña{
+    cursor: pointer;
+}
+
+#formularioRecuperacion{
+    border-color: #000000;
+    position: absolute;
+    max-height: 0%;
+    overflow: hidden;
+}
